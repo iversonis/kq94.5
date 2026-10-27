@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KQ94.5 FM</title>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<header class="encabezado">
+           
+    <a href="#inicio" class="logo">
+           <img src="imagenes\logokq94.5.png" alt="Logotipo de KQ94.5 FM" width="150" height="50">
+         <span class="nombre">
+            <span>KQ94.5 FM</span>
+                <small>Somos la Invencible</small>
+            </span>
+        </a>
+
+        
+ <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="navegacion">
+            ☰
+        </button>
+
+         <nav class="navegacion" id="navegacion">
+            <a href="#inicio" class="activo">Inicio</a>
+            <a href="#youtube">En vivo YouTube</a>
+            <a href="#Horarios">Horarios</a>
+            <a href="#locutores">Locutores</a>
+            <a href="#ubicacion">Ubicación</a>
+            <a href="#contacto">Contacto</a>
+
+            <div class="redes" role="group" aria-label="Redes sociales">
+                <a href="https://wa.me/18095421117"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="WhatsApp"><img src="imagenes\whatsapp.png" alt=""></a>
+                <a href="https://www.instagram.com/kq94.5?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Instagram"><img src="imagenes\instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/@kq94.5"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="YouTube"><img src="imagenes\youtube.png" alt=""></a>
+            </div>
+        </nav>
+ </header>
+
+    <main>
+        <section id="inicio">
+            <div class="hero-text">
+                <span class="badge-vivo">EN VIVO</span>
+                <h1>KQ94.5 FM</h1>
+                <p>Dembow, Reggaeton, Merengue, Salsa, El sonido de la Musica Urbana las 24 horas.</p>
+            </div>
+
+            <div class="audio-player-card">
+                <div class="radio-player">
+                    <audio
+                        id="radio-stream"
+                        src="https://radio.yaservers.com:9990/stream?q=ivycukausnl"
+                        autoplay
+                        preload="auto"
+                        hidden>
+                    </audio>
+                    <div class="radio-player__identity">
+                        <span class="radio-player__icon"><img src="imagenes\logokq94.5.png" alt="Logotipo de KQ94.5 FM"></span>
+                        <div>
+                            <p class="radio-player__eyebrow">RADIO EN VIVO</p>
+                            <h2>94.5 FM</h2>
+                            <p class="radio-player__tagline">Somos la Invencible</p>
+                        </div>
+                    </div>
+                    <div class="radio-player__controls">
+                        <button
+                            class="radio-player__toggle"
+                            id="radio-toggle"
+                            type="button"
+                            aria-label="Reproducir Radio Novedades"
+                            aria-pressed="false">
+                            <span id="radio-toggle-icon" aria-hidden="true">▶</span>
+                        </button>
+                        <div class="radio-player__details">
+                            <span class="radio-player__live">
+                                <span aria-hidden="true"></span>
+                                EN VIVO
+                            </span>
+                            <p id="radio-status" role="status" aria-live="polite">Listo para reproducir</p>
+                        </div>
+                        <label class="radio-player__volume" for="radio-volume">
+                            <span aria-hidden="true">🔊</span>
+                            <span class="visually-hidden">Volumen</span>
+                            <input id="radio-volume" type="range" min="0" max="1" step="0.01" value="0.8">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="youtube" class="youtube-section">
+            <div class="youtube-section__layout">
+                <div class="youtube-section__live">
+                    <div class="youtube-section__heading">
+                        <h2>YouTube En Vivo</h2>
+                        <a class="youtube-section__link"
+                           href="https://www.youtube.com/@kq94.5"
+                           target="_blank" rel="noopener noreferrer">
+                            Ver canal <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                    <div class="youtube-section__video">
+                        <iframe
+                            src="https://www.youtube.com/embed/videoseries?list=PLWyVDPWZPY-2e_KlcP35g7IFHrOpoSaLg"
+                            title="Videos de KQ94.5 FM en YouTube"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="youtube-section__recent">
+                    <div class="youtube-section__heading">
+                        <h3>Recientes</h3>
+                        <a class="youtube-section__link"
+                           href="https://www.youtube.com/@kq94.5/videos"
+                           target="_blank" rel="noopener noreferrer">
+                            Ver todos <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                    <div class="youtube-section__grid">
+                        <div class="youtube-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/videoseries?list=PLWyVDPWZPY-2e_KlcP35g7IFHrOpoSaLg"
+                                title="Videos recientes de KQ94.5"
+                                loading="lazy"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                            <span class="youtube-video__channel">KQ94.5</span>
+                        </div>
+                        <div class="youtube-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/videoseries?list=UULFPA3VgcdfxUIJMJ2Nu5loYw"
+                                title="Videos recientes de AlofokeTVshow"
+                                loading="lazy"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                            <span class="youtube-video__channel">AlofokeTVshow</span>
+                        </div>
+                        <div class="youtube-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/videoseries?list=UULFeLuaQLJSryToE0Yx5qvZPQ"
+                                title="Videos recientes de El Chico Sandy"
+                                loading="lazy"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                            <span class="youtube-video__channel">El Chico Sandy</span>
+                        </div>
+                        <div class="youtube-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/videoseries?list=UULFuxsCpZKfoTybbMhPbb1n6g"
+                                title="Videos recientes de DJ Nanow"
+                                loading="lazy"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                            <span class="youtube-video__channel">DJ Nanow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Horarios" class="programacion-section">
+            <h2>Horarios</h2>
+            <div class="programacion-dias" role="tablist" aria-label="Día de programación">
+                <button class="programacion-dia activo" id="dia-entre-semana" type="button" role="tab" aria-selected="true" aria-controls="programacion-horario" tabindex="0">Lunes a Viernes</button>
+                <button class="programacion-dia" id="dia-sabado" type="button" role="tab" aria-selected="false" aria-controls="programacion-horario" tabindex="-1">Sábado</button>
+                <button class="programacion-dia" id="dia-domingo" type="button" role="tab" aria-selected="false" aria-controls="programacion-horario" tabindex="-1">Domingo</button>
+            </div>
+            <p class="programacion-nota">Selecciona un día para ver su programación.</p>
+            <div class="programacion-horario" id="programacion-horario" role="tabpanel" aria-labelledby="dia-entre-semana">
+                <div class="programacion-controles">
+                    <button class="programacion-flecha" type="button" data-direccion="-1" aria-label="Ver programas anteriores">‹</button>
+                    <button class="programacion-flecha" type="button" data-direccion="1" aria-label="Ver programas siguientes">›</button>
+                </div>
+                <div class="programacion-tarjetas" id="programacion-tarjetas" tabindex="0" aria-label="Lista de programas" aria-live="polite">
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">6:00 AM – 7:00 AM</span>
+                        <div class="programacion-detalle"><h3>Despacio con Jesus Nova</h3><p>Jesus Nova</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">7:00 AM – 9:00 AM</span>
+                        <div class="programacion-detalle"><h3>Abriendo Sport</h3><p>Vian araujo, Ricardo Rodriguez</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">9:00 AM – 12:00 PM</span>
+                        <div class="programacion-detalle"><h3>Musica en vivo</h3><p>DJ Rob</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">12:00 PM – 2:00 PM</span>
+                        <div class="programacion-detalle"><h3>Politikal</h3><p>Alofoke Radio</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">2:00 PM – 5:00 PM</span>
+                        <div class="programacion-detalle"><h3>La Mezcla Con DJ Nanow</h3><p>DJ Nanow</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">5:00 PM – 7:00 PM</span>
+                        <div class="programacion-detalle"><h3>Sin Filtro Radio Show</h3><p>Alofoke Radio</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">7:00 PM – 9:00 PM</span>
+                        <div class="programacion-detalle"><h3>Chico Sandy</h3><p>Chico Sandy</p></div>
+                    </div>
+                    <div class="programacion-fila">
+                        <span class="programacion-hora">9:00 PM – 6:00 AM</span>
+                        <div class="programacion-detalle"><h3>Musica en Vivo</h3><p>Programacion Regular</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="locutores">
+            <h2>Locutores</h2>
+        </section>
+
+        <section class="ubicacion" id="ubicacion">
+            <h2>Ubicación</h2>
+              <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5561697294625!2d-69.9485368351082!3d18.45845013744519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea5620432234d97%3A0x21760d674c79cf6e!2sAv+27+de+Febrero+365-A%2C+Santo+Domingo!5e0!3m2!1ses!2sdo!4v1454867166765"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div class="tarjeta-ubicacion">
+    <h2>Visítanos</h2>
+    <p>Calle Principal #123, Santo Domingo</p>
+    <p class="horario">Lun – Vie · 8:00 am – 6:00 pm</p>
+    <a class="btn-ruta" target="_blank"
+       href="https://www.google.com/maps/dir/?api=1&destination=18.4861,-69.9312">Cómo llegar</a>
+  </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 KQ94.5 FM. Todos los derechos reservados.</p>
+    </footer>
+
+    <a class="whatsapp-flotante"
+       href="https://wa.me/18095421117"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Abrir WhatsApp">
+        <img src="imagenes\whatsapp.png" alt="">
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
